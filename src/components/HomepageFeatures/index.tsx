@@ -11,32 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Developer-Focused Docs',
+    Svg: require('@site/static/img/undraw-code-review.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Task based, concise documentation designed for developers. 
+        Includes tutorials, reference, and error handling to get users productive quickly.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Docs-as-Code Workflow',
+    Svg: require('@site/static/img/undraw-version-control.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+       Built with Docusaurus, versioned in GitHub, and auto-deployed 
+        using GitHub Actions.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Tools & Standards',
+    Svg: require('@site/static/img/undraw-testing.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        OpenAPI/Swagger, Postman collections, and CI/CD pipelines. 
+        Style aligned with the Microsoft Writing Style Guide.
       </>
     ),
   },
