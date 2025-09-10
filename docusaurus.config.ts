@@ -6,7 +6,6 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Technical Writer Portfolio - Silvana Morera Claramunt',
   tagline: 'Clear, developer-focused API docs with OpenAPI, Postman, and GitHub Pages',
-  favicon: 'img/favicon.ico',
   future: {
     v4: true, 
   },
