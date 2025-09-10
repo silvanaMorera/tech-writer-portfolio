@@ -1,7 +1,7 @@
 ---
 id: overview
 title: OpenWeather API — Overview
-slug: /Apis/openweather/overview
+slug: /apis/openweather/overview
 sidebar_position: 1
 ---
 
