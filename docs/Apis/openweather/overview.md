@@ -55,7 +55,8 @@ curl "https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appi
 
 Expected Response: 
 - 200 OK with JSON payload containing main.temp, weather.description, and city metadata.
-- See [Endpoints & Reference](endpoints) for full schema and error handling.
+-  See [Endpoints & Reference](./endpoints) for full schema and error handling.
+
 
 ### Tutorials 
 
