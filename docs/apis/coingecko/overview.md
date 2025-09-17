@@ -7,9 +7,9 @@ sidebar_position: 1
 
 # CoinGecko API Overview
 
-The **CoinGecko API** provides cryptocurrency market data — including prices, market cap, trading volume, and coin metadata.  
+The CoinGecko API provides cryptocurrency market data — including prices, market cap, trading volume, and coin metadata.  
 
-This sample demonstrates best practices for documenting **data-heavy APIs**: a **task-first quick start**, **clear pagination rules**, and **improved guidance** where the official docs are often confusing.
+This sample demonstrates best practices for documenting data-heavy APIs: a task-first quick start, clear pagination rules, and improved guidance where the official docs are often confusing.
 
 ---
 
@@ -23,10 +23,10 @@ When reviewing the official CoinGecko docs, I noticed recurring pain points:
 - **Root URL confusion** — Free and Pro endpoints use different domains, but this isn’t always surfaced clearly.  
 
 **My goal in this rewrite is to:**
-- Provide **task-first quick starts** that get results in under 2 minutes.  
-- Surface **pagination and rate limits up front**.  
-- Keep parameters **minimal and contextual** (required vs optional).  
-- Defer **error handling** to the [Endpoints & Reference](./reference) section, where developers actually need it.
+- Provide task-first quick starts that get results in under 2 minutes.  
+- Surface pagination and rate limits up front.  
+- Keep parameters minimal and contextual (required vs optional).  
+- Defer error handling to the [Endpoints & Reference](./reference) section, where developers actually need it.
 
 ---
 
