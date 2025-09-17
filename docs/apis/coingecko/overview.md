@@ -26,7 +26,7 @@ When reviewing the official CoinGecko docs, I noticed recurring pain points:
 - Provide task-first quick starts that get results in under 2 minutes.  
 - Surface pagination and rate limits up front.  
 - Keep parameters minimal and contextual (required vs optional).  
-- Defer error handling to the [Endpoints & Reference](./reference) section, where developers actually need it.
+- Defer error handling to the Endpoints & Reference section, where developers actually need it.
 
 ---
 
@@ -47,7 +47,7 @@ When reviewing the official CoinGecko docs, I noticed recurring pain points:
 - Pro: up to 300 requests per minute (depending on tier).  
 
 If you exceed these, you’ll receive **HTTP 429 Too Many Requests**.  
-For full error responses and recovery guidance, see the [Reference](./reference).
+For full error responses and recovery guidance, see the reference.
 
 ---
 
