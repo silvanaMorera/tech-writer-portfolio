@@ -1,0 +1,126 @@
+openapi: 3.0.0
+info:
+  title: CoinGecko API (Sample)
+  description: >
+    A sample OpenAPI specification for selected CoinGecko endpoints.
+    This spec is simplified for portfolio purposes.
+  version: 1.0.0
+servers:
+  - url: https://api.coingecko.com/api/v3
+
+paths:
+  /simple/price:
+    get:
+      summary: Get current price of one or more cryptocurrencies
+      parameters:
+        - name: ids
+          in: query
+          required: true
+          schema:
+            type: string
+          description: Comma-separated list of coin IDs (e.g. bitcoin, ethereum).
+        - name: vs_currencies
+          in: query
+          required: true
+          schema:
+            type: string
+          description: Comma-separated list of fiat currencies (e.g. usd, eur).
+      responses:
+        '200':
+          description: Price data
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties:
+                  type: object
+                  properties:
+                    usd:
+                      type: number
+                      example: 43021
+        '429':
+          description: Too many requests
+        '404':
+          description: Coin not found
+
+  /coins/markets:
+    get:
+      summary: List coins with market data
+      parameters:
+        - name: vs_currency
+          in: query
+          required: true
+          schema:
+            type: string
+          description: The target currency of market data (usd, eur, jpy, etc.).
+        - name: order
+          in: query
+          schema:
+            type: string
+            default: market_cap_desc
+          description: Sort order (market_cap_desc, volume_desc, id_asc).
+        - name: per_page
+          in: query
+          schema:
+            type: integer
+            maximum: 250
+          description: Number of results per page (max 250).
+        - name: page
+          in: query
+          schema:
+            type: integer
+          description: Page number (1-indexed).
+      responses:
+        '200':
+          description: A list of coins with market data
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      example: bitcoin
+                    symbol:
+                      type: string
+                      example: btc
+                    current_price:
+                      type: number
+                      example: 43021
+        '429':
+          description: Too many requests
+
+  /simple/token_price/ethereum:
+    get:
+      summary: Get ERC-20 token price (Ethereum contract)
+      parameters:
+        - name: contract_addresses
+          in: query
+          required: true
+          schema:
+            type: string
+          description: >
+            ERC-20 contract address. Multiple supported, comma-separated.
+        - name: vs_currencies
+          in: query
+          required: true
+          schema:
+            type: string
+          description: One or more currency codes.
+      responses:
+        '200':
+          description: Token price data
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties:
+                  type: object
+                  properties:
+                    usd:
+                      type: number
+                      example: 1.0
+        '404':
+          description: Token not found
