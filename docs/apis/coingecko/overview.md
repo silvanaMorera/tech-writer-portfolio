@@ -64,7 +64,7 @@ curl "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=us
   "bitcoin": { "usd": 43021 }
 }
 ```
-> Prefer a GUI? Download the Postman Collection or view the OpenAPI schema.
+> Prefer a GUI? [Download the Postman Collection](./coingecko.postman_collection.json)
 
 ## Pagination
 Most list endpoints use `page` and `per_page`:
