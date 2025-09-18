@@ -1,41 +1,34 @@
-# Website
+# API Documentation Portfolio
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This repository showcases my approach to documenting APIs.  
+Each sample focuses on solving real developer pain points while demonstrating different documentation styles.
 
-## Installation
+---
 
-```bash
-yarn
+## Why Two Styles?
+
+API documentation isn’t one-size-fits-all.  
+Developers need different entry points depending on whether they’re onboarding or building a production integration.
+
+- OpenWeather API → *Tutorial focused*  
+  - Simple tasks (current weather, forecasts, localization).  
+  - Shows how I write approachable guides that help developers succeed in under 5 minutes.  
+
+- CoinGecko API → Reference focused
+  - Detailed tasks with parameter tables, pagination rules, rate limits, and error handling.  
+  - Shows how I handle complex APIs and surface details where developers actually need them.  
+
+---
+
+## Repo Structure
+
+```plaintext
+docs/
+  apis/
+    openweather/
+      overview.md      ← simple onboarding tutorials
+      reference.md
+    coingecko/
+      overview.md      ← detailed reference docs
+      reference.md
 ```
-
-## Local Development
-
-```bash
-yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
