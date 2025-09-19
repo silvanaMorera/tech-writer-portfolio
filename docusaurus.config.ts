@@ -50,7 +50,7 @@ const config: Config = {
           label: 'Samples',
         },
         {
-          href: 'https://silvanamorera.github.io/tech-writer-portfolio/',
+          href: 'https://github.com/silvanaMorera/tech-writer-portfolio',
           label: 'GitHub',
           position: 'right',
         },
