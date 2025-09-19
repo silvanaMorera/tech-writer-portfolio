@@ -11,7 +11,7 @@ When running cloud native applications in Docker, connectivity issues are among 
 
 ---
 
-## Problems
+## Symptoms
 
 - Application cannot connect to the internet.
 - `curl` or `ping` inside the container returns `Could not resolve host`.
@@ -56,6 +56,7 @@ Changes require restarting Docker Desktop.
 
 ### 2. Bridge Network Misconfiguration
 **Cause**: Containers on custom networks cannot talk to each other if not attached to the same network.
+
 **Fix**:
 ```bash 
 # List networks
@@ -68,8 +69,9 @@ docker network connect my-network my-container
 docker inspect my-container
 ```
 
-### 3. Bridge Network Misconfiguration
+### 3. Firewall Rules
 **Cause**: Local firewall or cloud security groups may block container traffic.
+
 **Fix**:
 ```bash 
 # Check firewall rules
@@ -79,6 +81,7 @@ Allow intra-container or required ports as needed.
 
 ### 4.Container Port Mapping
 **Cause**: Host port not mapped to container port.
+
 **Fix**:
 ```bash 
 # Verify mapping
