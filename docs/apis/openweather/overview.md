@@ -31,7 +31,7 @@ When reviewing the original OpenWeather docs, I noticed several recurring pain p
 ## Getting Started
 
 **Base URL:**  
-[openweathermap.org/api](https://openweathermap.org/api)
+[https://api.openweathermap.org](https://api.openweathermap.org)
 
 ### Authentication
 
