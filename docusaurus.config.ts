@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Technical Writer Portfolio - Silvana Morera Claramunt',
-  tagline: 'Clear, developer-focused API docs with OpenAPI, Postman, and GitHub Pages',
+  tagline: 'I document APIs, SDKs, Docker, CLI workflows, and developer onboarding paths using real hands-on testing. API documentation, developer tools, and docs-as-code workflows for modern engineering teams.',
   future: {
     v4: true, 
   },
@@ -50,7 +50,7 @@ const config: Config = {
           label: 'Samples',
         },
         {
-          href: 'https://github.com/silvanaMorera/tech-writer-portfolio',
+          href: 'https://github.com/silvanaMorera/tech-writer-portfolioa',
           label: 'GitHub',
           position: 'right',
         },

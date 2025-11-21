@@ -11,12 +11,12 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Developer-Focused Docs',
+    title: 'Developer-Focused API Docs',
     Svg: require('@site/static/img/undraw-code-review.svg').default,
     description: (
       <>
-        Task based, concise documentation designed for developers. 
-        Includes tutorials, reference, and error handling to get users productive quickly.
+        Task-based, example-driven documentation for developers. Includes tutorials, reference, and clear error handling to help users get productive quickly.
+        Created 20+ developer-focused docs and API samples through real hands-on testing.
       </>
     ),
   },
@@ -25,18 +25,17 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw-version-control.svg').default,
     description: (
       <>
-       Built with Docusaurus, versioned in GitHub, and auto-deployed 
-        using GitHub Actions.
+       Documentation built with Docusaurus, versioned through GitHub, and auto-deployed with GitHub Actions in a modern docs-as-code pipeline.
+       Maintained 300+ documentation updates through PR reviews, version control, and automated deployments.
       </>
     ),
   },
   {
-    title: 'Tools & Standards',
+    title: 'API Tooling & Developer Ecosystem',
     Svg: require('@site/static/img/undraw-testing.svg').default,
     description: (
       <>
-        OpenAPI/Swagger, Postman collections, and CI/CD pipelines. 
-        Style aligned with the Microsoft Writing Style Guide.
+        OpenAPI/Swagger specs, Postman Collections, cURL examples, environment variables, and CI/CD-friendly documentation aligned with developer-first standards. Developed working Postman Collections and OpenAPI samples based on real endpoints.
       </>
     ),
   },
