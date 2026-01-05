@@ -1,7 +1,7 @@
 ---
 id: knowledge-base-2025-09
 title: Help Customer Who Did Not Receive eSign Link Due to Entering Wrong Phone and/or Email
-sidebar_label: January 2026
+sidebar_label: Help a customer
 ---
 
 ---
